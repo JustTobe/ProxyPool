@@ -50,3 +50,8 @@ def get_proxy():
     except ConnectionError:
         return None
 ```
+
+
+可能出现错误的地方：
+可能报错：AttributeError: 'int' object has no attribute 'items'
+解决：更新redis依赖版本  pip3 install redis==2.10.6
